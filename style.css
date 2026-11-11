@@ -1,0 +1,31 @@
+ margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f4f6ff; color: #222; }
+header { background: #1a237e; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+.logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+nav a { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; padding: 5px 10px; border-radius: 5px; }
+nav a:hover, nav a.active { background: #ff6f00; }
+.hamburger { display: none; font-size: 28px; cursor: pointer; }
+.hero { background: linear-gradient(135deg, #1a237e, #3949ab); color: white; text-align: center; padding: 60px 20px; }
+.hero h1 { font-size: 32px; margin-bottom: 10px; }
+section { background: white; margin: 15px; padding: 25px; border-radius: 12px; text-align: center; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 15px; }
+.card { background: #e8eaf6; padding: 20px; border-radius: 10px; width: 160px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 15px; }
+.gallery-grid img { width: 100%; border-radius: 10px; }
+.blog-post { background: #f9f9ff; border-left: 5px solid #ff6f00; padding: 20px; margin: 15px 0; text-align: left; border-radius: 8px; }
+.blog-post h2 { color: #1a237e; margin-bottom: 5px; }
+.blog-post a { color: #1a237e; font-weight: bold; }
+.btn { display: inline-block; background: #ff6f00; color: white; padding: 12px 22px; border: none; border-radius: 25px; text-decoration: none; margin: 8px 5px; font-size: 16px; cursor: pointer; }
+.btn2 { background: white; color: #1a237e; border: 2px solid #1a237e; }
+.contact-form { max-width: 500px; margin: 15px auto; text-align: left; display: flex; flex-direction: column; gap: 8px; }
+.contact-form input, .contact-form select, .contact-form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 8px; width: 100%; font-size: 15px; }
+footer { background: #1a237e; color: white; text-align: center; padding: 20px; margin-top: 20px; }
+footer a { color: #ffcc80; text-decoration: none; }
+@media (max-width: 700px) {
+  .hamburger { display: block; }
+  nav { display: none; flex-direction: column; position: absolute; top: 60px; right: 0; background: #1a237e; width: 100%; text-align: center; padding: 10px; }
+  nav.show { display: flex; }
+  nav a { margin: 8px 0; display: block; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 24px; }
+      }
